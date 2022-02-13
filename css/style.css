@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Forca */
+.div-jogo {
+    width: 100%;
+    height: 100%;
+}
+canvas {
+    margin-bottom: 30px;
+}
+
+/* Traços */
+.traco {
+    height: 90px;
+    margin: 5px;
+    border-bottom: solid 3px black;
+}
+
+/*letras*/
+.letras{
+    width: 80px;
+    height: 72px;
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+    visibility: hidden;
+}
+
+
+.letra-certa{
+    visibility: visible;/*Quando acertar uma palavra adicionar classe palavra-certa*/
+}
+
+.div-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.div-flex-botton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div-adicionar-palavra{
+    margin-top: 80px;
+}
+/* Letras Erradas */
+.centraliza { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.letra-errada{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Botão */
+.button-form {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    
+}
+button {
+    width: 280px;
+    height: 55px;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 10px;
+}
+button:first-child {
+    margin-bottom: 15px;
+}
+
+/*Inicio Jogo*/
+.div-inicio {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.adicionar-palavra{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+}
+.mostra{
+    display: block;
+}
+.esconde{
+    display: none;
+}
+.form-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-inicio div{
+    width: 300px;
+}
+.form-inicio button{
+    height: 90px;
+    margin: 5px;
+}
+
+.btn-adicionar-palavra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.textarea {
+    width: 570px;
+    height: 400px;
+    outline: 0;
+    border: none;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 750px){
+    .letras{
+        width: 60px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .traco {
+        height: 50px;
+    }
+    .div-flex {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+

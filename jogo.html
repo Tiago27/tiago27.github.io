@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="div-inicio mostra">
+        <div class="div-flex form-inicio">
+            <div action="" class="form-btn-inicio">
+                <form action="">
+                    <button class="btn-jogar">
+                        Começar jogo
+                    </button>
+                </form>
+                <form action="">
+                    <button class="btn-adicionar">
+                        Adicionar nova palavra
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-adicionar-palavra  esconde">
+        <form action="" id="form-text">
+            <div class="div-flex">
+                <textarea class="textarea" placeholder="Digite uma nova palavra" name="" id="" cols="30"
+                    rows="10"></textarea>
+            </div>
+            <div class="btn-adicionar-palavra">
+                <button class="btn-salvar-palavra">
+                    Salvar e começar
+                </button>
+                <button class="btn-cancelar">
+                    Cancelar
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="div-jogo esconde">
+        <canvas id="canvas" class="centraliza" width="190" height="270px"></canvas>
+        <div class="div-palavra div-flex">
+
+        </div>
+        <div class="letra-errada centraliza"></div>
+        <div class="button-form">
+            <div class="div-flex-botton">
+                <button class="btn-novo-jogo">
+                    Novo Jogo
+                </button>
+                <button class="btn-desistir">
+                    Desistir
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/forca.js"></script>
+    <script src="js/palavras.js"></script>
+    <script src="js/palavra-aleatoria.js"></script>
+    <script src="js/linhas.js"></script>
+    <script src="js/letras.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
